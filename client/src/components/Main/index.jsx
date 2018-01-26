@@ -21,7 +21,6 @@ class Main extends React.Component {
       if (currentUser) {
         return (
           <div>
-            <Navbar />
             <Home />
           </div>
         );
@@ -32,7 +31,7 @@ class Main extends React.Component {
         </div>
       );
     }
-    return null;
+    return <p />;
   }
 }
 

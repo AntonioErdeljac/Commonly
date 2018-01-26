@@ -30,7 +30,6 @@ class Login extends React.Component {
         <div className="row">
           <div className="col-md-7 c-split-header">
             <h6 className="c-split-header-title">Welcome to Commonly</h6>
-            <i className="c-split-header-text">Get reminded of everyday tasks</i>
             <br />
             <i className="fa fa-tasks c-split-header-icon" />
           </div>

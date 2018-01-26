@@ -56,7 +56,7 @@ h5 {
 
 h6 {
   margin-bottom: 3rem;
-  font-family: 'Montserrat';
+  font-family: 'Lato';
   font-size: 2em;
   line-height: 3rem;
   font-weight: 600;
@@ -85,4 +85,11 @@ label {
 
 .c-navbar-title {
   color: #2d89e5;
+}
+
+.c-card {
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+  padding: 15px;
 }

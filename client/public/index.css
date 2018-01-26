@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
 
 html, body {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 h1 {
@@ -55,7 +55,6 @@ h5 {
 }
 
 h6 {
-  margin-bottom: 3rem;
   font-family: 'Lato';
   font-size: 2em;
   line-height: 3rem;
@@ -85,6 +84,12 @@ label {
 
 .c-navbar-title {
   color: #2d89e5;
+  font-family: 'Lato';
+  font-size: 2em;
+  line-height: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0em;
 }
 
 .c-card {
@@ -92,4 +97,55 @@ label {
   border-style: none;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
   padding: 15px;
+}
+
+.c-split-header {
+  height: 100vh !important;
+  background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.c-split {
+  height: 100vh;
+}
+
+.c-split-header-title {
+  padding:30px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 50px;
+}
+
+.c-split-header-text {
+  padding: 30px;
+  font-family: 'Montserrat';
+  font-size: 1.6em;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.c-split-header-icon {
+  margin-top: 100px;
+  padding: 30px;
+  font-size: 140px;
+  color: #fff;
+}
+
+.c-split-form {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+}
+
+.c-split-form-header {
+  color: #2d89e5;
+}
+
+.c-split-form-input {
+  border-style: none;
+  border-bottom-style: solid;
+  border-radius: 0;
 }

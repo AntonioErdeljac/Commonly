@@ -1,3 +1,3 @@
 export default {
-  API_ROOT: 'http://locahost:8000/api',
+  API_ROOT: 'http://localhost:8000/api',
 };

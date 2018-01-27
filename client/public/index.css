@@ -92,6 +92,14 @@ label {
   font-size: 100px;
 }
 
+.color-red {
+  color: #e52d2d
+}
+
+.add-new-card {
+  margin-top: 70px;
+}
+
 .c-navbar-title {
   color: #2d89e5;
   font-family: 'Lato';

@@ -25,7 +25,13 @@ const Auth = {
     routes.post('/user/login', { user: { email, password } }),
 };
 
+const Tasks = {
+  all: () =>
+    routes.get('/tasks'),
+};
+
 export default {
   Auth,
+  Tasks,
   setToken: (_token) => { token = _token; },
 };

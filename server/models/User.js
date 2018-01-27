@@ -9,6 +9,7 @@ const UserSchema = new mongoose.Schema({
   hash: String,
   salt: String,
   username: { type: String, required: [true, "Can't be empty."], unique: true, lowercase: true, index: true },
+  tasks: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Task' }],
 }, { timestamps: true });
 
 UserSchema.plugin(uniqueValidator, { message: 'is already taken.' });

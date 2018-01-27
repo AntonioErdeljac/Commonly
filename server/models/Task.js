@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const TaskSchema = new mongoose.Schema({
   info: String,
-  time: Date,
+  time: String,
   icon: String,
   author: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 }, { timestamps: true });

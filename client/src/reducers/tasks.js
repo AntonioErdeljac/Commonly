@@ -5,6 +5,11 @@ export default (state = {}, action) => {
         ...state,
         tasks: action.payload.tasks,
       };
+    case 'ADD_TASK':
+      return {
+        ...state,
+        tasks: (state.tasks || []).concat([action.payload.task]),
+      };
     default:
       return state;
   }

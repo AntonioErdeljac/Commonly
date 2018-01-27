@@ -28,6 +28,8 @@ const Auth = {
 const Tasks = {
   all: () =>
     routes.get('/tasks'),
+  new: (info, time) =>
+    routes.post('/tasks/new', { task: { info, time, icon: 'shopping-cart' } }),
 };
 
 export default {

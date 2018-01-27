@@ -7,13 +7,13 @@ const promiseMiddleware = store => next => (action) => {
     const newAction = action;
     action.payload.then(
       (res) => {
-        action.payload = res;
-        store.dispatch(action);
+        newAction.payload = res;
+        store.dispatch(newAction);
       },
       (error) => {
-        action.error = true;
-        action.payload = error.response.body;
-        store.dispatch(action);
+        newAction.error = true;
+        newAction.payload = error.response.body;
+        store.dispatch(newAction);
       },
     );
     return;

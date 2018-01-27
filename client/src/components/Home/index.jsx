@@ -38,11 +38,15 @@ const mapDispatchToProps = dispatch => ({
     dispatch({ type: 'LOAD_TASKS', payload }),
 });
 
+Home.defaultProps = {
+  tasks: null,
+};
+
 Home.propTypes = {
   currentUser: PropTypes.shape({}).isRequired,
   onLogout: PropTypes.func.isRequired,
   loadTasks: PropTypes.func.isRequired,
-  tasks: PropTypes.instanceOf(PropTypes.array).isRequired,
+  tasks: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

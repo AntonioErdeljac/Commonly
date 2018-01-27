@@ -57,7 +57,7 @@ class TaskList extends React.Component {
         </div>
         {
         tasks.map(task => (
-          <TaskCard icon={task.icon} info={task.info} time={task.time} />
+          <TaskCard key={Math.random()} icon={task.icon} info={task.info} time={task.time} />
         ))
       }
       </div>
@@ -81,5 +81,16 @@ const mapDispatchToProps = dispatch => ({
   submitTask: payload =>
     dispatch({ type: 'ADD_TASK', payload }),
 });
+
+TaskList.defaultProps = {
+  info: null,
+  time: null,
+};
+
+TaskList.propTypes = {
+  submitTask: PropTypes.func.isRequired,
+  info: PropTypes.string,
+  time: PropTypes.string,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(TaskList);

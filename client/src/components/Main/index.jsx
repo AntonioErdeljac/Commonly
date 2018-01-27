@@ -3,7 +3,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import agent from '../../agent';
-import Navbar from '../Navbar';
 import Login from '../Login';
 import Home from '../Home';
 
